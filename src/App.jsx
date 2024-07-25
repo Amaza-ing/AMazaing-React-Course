@@ -13,7 +13,7 @@ function App() {
     <div>
       <h1>State Up | Comunicación entre hermanos</h1>
 
-      <h2>Hola { displayName }</h2>
+      <h2>Hola, { displayName }</h2>
 
       <HelloUser userName={displayName}></HelloUser>
 
