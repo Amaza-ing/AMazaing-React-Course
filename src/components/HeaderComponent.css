@@ -1,0 +1,19 @@
+.header {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+
+  .title {
+    text-align: center;
+  }
+
+  .link-list {
+    display: flex;
+    justify-content: space-around;
+
+    .link {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

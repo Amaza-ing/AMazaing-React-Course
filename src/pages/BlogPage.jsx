@@ -1,7 +1,13 @@
+import HeaderComponent from "../components/HeaderComponent";
+
 function BlogPage() {
   return (
-    <div>BlogPage</div>
-  )
+    <>
+      <HeaderComponent></HeaderComponent>
+      
+      <div>BlogPage</div>
+    </>
+  );
 }
 
-export default BlogPage
+export default BlogPage;
