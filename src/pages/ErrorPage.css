@@ -1,0 +1,9 @@
+#error-page {
+  height: 100vh;
+  color: red;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
