@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import "./HeaderComponent.css";
+import { useContext } from "react";
+import { UserContext } from "../contexts/user.context";
 
 function HeaderComponent() {
+  const {user} = useContext(UserContext);
+
   return (
     <header className="header">
-      <h1 className="title">Welcome!</h1>
+      <h1 className="title">Welcome {user && <span>{user}</span>}</h1>
       <nav>
         <ul className="link-list">
           <li>
