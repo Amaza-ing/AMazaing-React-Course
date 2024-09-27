@@ -8,7 +8,7 @@ function HeaderComponent() {
 
   return (
     <header className="header">
-      <h1 className="title">Welcome {user && <span>{user}</span>}</h1>
+      <h1 className="title">Welcome {user && <span>{user.name}</span>}</h1>
       <nav>
         <ul className="link-list">
           <li>
