@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -15,5 +16,4 @@ function PostCard(props) {
   );
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 export default React.memo(PostCard);
