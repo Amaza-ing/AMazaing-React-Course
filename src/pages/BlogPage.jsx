@@ -26,7 +26,7 @@ function BlogPage() {
       <HeaderComponent></HeaderComponent>
 
       <section>
-        <h2>Blog</h2>
+        <h2 data-testid="blog-title">Blog</h2>
         <button onClick={() => login()}>Login</button>
         <button onClick={() => logout()}>Logout</button>
 
