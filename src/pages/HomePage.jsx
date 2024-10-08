@@ -1,9 +1,9 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import HeaderComponent from "../components/HeaderComponent";
 import { UserContext } from "../contexts/user.context";
 
 function HomePage() {
-  const {user, login, logout} = useContext(UserContext);
+  const { user, login, logout } = useContext(UserContext);
 
   return (
     <>
@@ -14,7 +14,6 @@ function HomePage() {
 
       <button onClick={() => login()}>Login</button>
       <button onClick={() => logout()}>Logout</button>
-
     </>
   );
 }
