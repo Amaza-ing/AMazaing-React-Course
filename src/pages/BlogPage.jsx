@@ -31,9 +31,9 @@ function BlogPage() {
         <button onClick={() => logout()}>Logout</button>
 
         {error ? (
-          <h2>Algo ha salido mal</h2>
+          <h2 data-testid="error-msg">Algo ha salido mal</h2>
         ) : !postCards.length ? (
-          <h2>Loading...</h2>
+          <h2 data-testid="loading-msg">Loading...</h2>
         ) : (
           <ul>{postCards}</ul>
         )}
