@@ -1,17 +1,20 @@
+import { useState } from "react";
 import Child from "./components/Child";
 
 function App() {
-  const text = "Variable desde el padre";
-  const person = {
-    sex: "hombre",
-    age: 30,
+  const [displayName, setDisplayName] = useState("");
+
+  const login = (name) => {
+    setDisplayName(name);
   };
 
   return (
     <div>
-      <h1>Props | Comunicación entre componentes Padre-Hijo ⬇</h1>
+      <h1>Props | Comunicación Hijo-Padre ⬆</h1>
 
-      <Child msg={text} person={person}></Child>
+      <h2>Hola {displayName}</h2>
+
+      <Child handleLogin={login}></Child>
     </div>
   );
 }
