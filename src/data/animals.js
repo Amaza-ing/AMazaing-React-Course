@@ -1,4 +1,4 @@
-const animals = [
+export const animals = [
   {
     id: 1,
     name: "dog",
