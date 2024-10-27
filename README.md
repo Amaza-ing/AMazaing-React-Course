@@ -1,4 +1,7 @@
 <h1>Bienvenidos al curso de React de AMazaing</h1>
+
+<h3><a href="https://www.youtube.com/playlist?list=PLzA2VyZwsq_-dE3Jvunglxq8a6UcH6gnF">Ver este curso en YouTube</a></h3>
+
 <h3>
   Este curso está separado por ramas, tienes cada lección y ejemplo en   cada rama.
 </h3>
@@ -52,4 +55,5 @@
 Desarrollado con React y Vite
 
 Para levantar el proyecto escribe lo siguiente en la terminal:
+
 <pre>npm run dev</pre>
