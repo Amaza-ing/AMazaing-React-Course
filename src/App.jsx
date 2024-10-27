@@ -1,12 +1,12 @@
-import Menu from "./components/Menu";
-
 function App() {
+  const saySomething = () => {
+    console.log("something");    
+  }
+
   return (
     <div>
-      <Menu></Menu>
-
-      <h1>Hola a todos</h1>
-      <h2>h2 en App.jsx</h2>
+      <h1 onClick={saySomething}>Hola a todos</h1>
+      {/* <h1 onClick={() => console.log("patata")}>Hola a todos</h1> */}
     </div>
   );
 }
