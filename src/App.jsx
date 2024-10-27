@@ -1,18 +1,15 @@
+const movies = ["Lord of the Rings", "Star Wars", "Dune"];
+
 function App() {
-  const condition = true;
+  const HTMLMovies = movies.map((movie, index) => {
+    return <p key={movie}>{index + 1} - {movie}</p>
+  })
 
   return (
     <div>
-      <h1>Renderizado Condicional</h1>
+      <h1>Renderizado de Listas</h1>
 
-      {condition && <h2>La condición se cumple</h2>}
-      {!condition && <h2>La condición no se cumple</h2>}
-
-      {condition ? (
-        <h2>La condición se cumple</h2>
-      ) : (
-        <h2>La condición no se cumple</h2>
-      )}
+      {HTMLMovies}
     </div>
   );
 }
